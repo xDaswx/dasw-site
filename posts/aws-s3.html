@@ -1,0 +1,131 @@
+<html lang="en"><head>
+    <title>Dasw | AWS-S3</title>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://dasw.glitch.me/">
+    <meta name="description" content="I'm a full-stack developer from Brazil. I love to create technology and use it to make people's lives easier.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Dasw | AWS-S3">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/opengraph-image.png">
+    <meta property="og:url" content="https://dasw.glitch.me/">
+    <meta property="og:image:height">
+    <meta property="og:image:alt" content="Dasw">
+    <link rel="icon" href="../resources/img/favicon/favicon.ico">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Dasw | AWS-S3" name="twitter:title">
+    <meta content="I'm a full-stack developer from Brazil. I love to create technology and use it to make people's lives easier." name="twitter:description">
+    <link rel="stylesheet" href="../tailwindcss/dasw.css">
+</head>
+  
+    <body class="mx-auto flex min-h-screen max-w-[872px] flex-col gap-9 bg-neutral-950 px-10 py-8 text-sm text-neutral-400 md:gap-20 md:py-16">
+      <header class="z-40 flex w-full flex-col gap-2 md:flex-row md:justify-between">
+  
+    <nav role="navigation">
+      <ul role="list" class="flex flex-row gap-2">
+        <li>
+          <a href="/" class="hover:text-neutral-100">Home</a>
+        </li>
+        <li>/</li>
+        <li>
+          <a href="/posts.html" class="hover:text-neutral-100">Posts</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+      <div class="fixed z-0 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full bg-blue-500 blur-[150px] md:blur-[350px] opacity-50 left-0 top-0">
+  </div>
+      <div class="fixed z-0 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full bg-purple-500 blur-[150px] md:blur-[350px] opacity-50 right-0 bottom-0">
+  </div>
+      
+    <main class="post mx-auto flex w-full min-w-prose flex-col gap-4">
+  
+      <div class="md:flex space-x-10">
+        <div class="w-full">
+          <div class="not-prose">
+            
+          </div>
+        </div>
+      </div>
+      <header role="presentation">
+        <h1 class="text-lg font-bold text-center">
+          ASW-S3
+        </h1>
+        <p class="italic text-center">TypeScript Express Integration with AWS S3 - 18/07/2023</p>
+        <p class="text-sm text-gray-500">5 min read</p>
+      </header>
+  
+      <h2 id="hello-world">Hello World</h2>
+      <h1>Tutorial: TypeScript Express Integration with AWS S3</h1>
+      <p>This tutorial will show you how to use the <a target="_blank" href="https://github.com/xDaswx/aws-s3-startup">aws-s3-startup</a> project, which is a sample application for uploading,
+        downloading, and deleting files on AWS S3 using Express with TypeScript.</p>
+    
+      <h2>Prerequisites:</h2>
+      <ul>
+        <li>Node.js (version 14 or higher)</li>
+        <li>NPM (Node Package Manager) or Yarn</li>
+      </ul>
+    
+      <h2>Step 1: Configuration</h2>
+      <ol>
+        <li>Clone the <a target="_blank" href="https://github.com/xDaswx/aws-s3-startup">aws-s3-startup</a> project to your computer:</li>
+        <div data-rehype-pretty-code-fragment=""><div data-rehype-pretty-code-title="" data-language="bash" data-theme="default">terminal</div><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span data-line=""><span style="color:#FFC777">git clone</span><span style="color:#C8D3F5"> </span><span style="color:#C3E88D"> https://github.com/xDaswx/aws-s3-startup.git</span></span></code></pre></div>
+        <div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span data-line=""><span style="color:#FFC777">cd</span><span style="color:#C8D3F5"> </span><span style="color:#C3E88D"> aws-s3-startup</span></span></code></pre></div>
+        <br>
+        <li>Install project dependencies:</li>
+        <br>
+        <div data-rehype-pretty-code-fragment=""><div data-rehype-pretty-code-title="" data-language="bash" data-theme="default">terminal</div><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span data-line=""><span style="color:#C8D3F5"> </span><span style="color:#C3E88D"> npm install</span></span></code></pre></div>
+        <li>Create a <code>.env</code> file at the root of the project with your AWS credentials:</li>
+
+        <pre>
+    AWS_BUCKET_NAME=your_bucket_name
+    AWS_BUCKET_REGION=your_region
+    AWS_ACCESS_KEY=your_access_key
+    AWS_SECRET_KEY=your_secret_key
+        </pre>
+      </ol>
+    
+      <h2>Step 2: Running the Server</h2>
+      <ol>
+        <li>Start the server using the command:</li>
+        <br>
+        <div data-rehype-pretty-code-fragment=""><div data-rehype-pretty-code-title="" data-language="bash" data-theme="default">terminal</div><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span data-line=""><span style="color:#FFC777">npm run</span><span style="color:#C8D3F5"> </span><span style="color:#C3E88D"> dev:server</span></span></code></pre></div>
+        <br>
+        <li>This will start the Express server locally on port 3333.</li>
+      </ol>
+    
+      <h2>Step 3: Testing the Functionalities</h2>
+      <p>Now that the server is running, you can test the functionalities of uploading, downloading, and deleting files on
+        AWS S3.</p>
+    
+      <h3>File Upload</h3>
+      <p>Make a POST request to the route <code>/</code> by sending a file in the request body with the key "image". For
+        example, using <code>curl</code>:</p>
+        <div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span data-line=""><span style="color:#FFC777">curl </span><span style="color:#C8D3F5"> </span><span style="color:#C3E88D"> -X POST -F "image=@path/to/your/file.jpg" http://localhost:3333</span></span></code></pre></div>
+      <p>The response will be a JSON with the URL of the file on S3, indicating that the upload was successful.</p>
+    
+      <h3>File Download</h3>
+      <p>Make a GET request to the route <code>/get/:filename</code>, replacing <code>:filename</code> with the name of the
+        file you want to download. For example:</p>
+        <div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span data-line=""><span style="color:#FFC777">curl </span><span style="color:#C8D3F5"> </span><span style="color:#C3E88D"> http://localhost:3333/get/your-file.jpg -o downloaded-file.jpg</span></span></code></pre></div>
+      <p>The file will be downloaded to your local directory with the name "downloaded-file.jpg".</p>
+    
+      <h3>File Deletion</h3>
+      <p>Make a DELETE request to the route <code>/:filename</code>, replacing <code>:filename</code> with the name of the
+        file you want to delete. For example:</p>
+        <div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span data-line=""><span style="color:#FFC777">curl </span><span style="color:#C8D3F5"> </span><span style="color:#C3E88D"> -X DELETE http://localhost:3333/your-file.jpg</span></span></code></pre></div>
+      <p>The response will be a JSON indicating that the file was deleted.</p>
+    
+      <h2>Conclusion</h2>
+      <p>Congratulations! You have completed the TypeScript Express integration with AWS S3 tutorial. Now you have a
+        functional application to perform file upload, download, and deletion on AWS S3 using Express and TypeScript.</p>
+      <p>Remember to adapt the tutorial and routes according to your project's needs, and make sure to follow security best
+        practices when dealing with credentials and sensitive information.</p>
+    
+      <p>I hope this tutorial has been helpful! If you have any questions or need further assistance, feel free to ask. Happy
+        coding!</p>
+        <p>Repository: <a target="_blank" href="https://github.com/xDaswx/aws-s3-startup">aws-s3-startup</a></p>
+    </main>
+  
+      
+    
+  </body></html>
