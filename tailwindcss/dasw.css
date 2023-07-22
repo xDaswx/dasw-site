@@ -612,6 +612,7 @@ pre>code {
 }
 
 [data-line] {
+    overflow-x: auto;
     border-left-width: 2px;
     border-left-color: transparent;
     padding-left: .5rem;
