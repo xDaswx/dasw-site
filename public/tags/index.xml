@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Dasw</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Dasw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Dasw</copyright>
+    <lastBuildDate>Sun, 04 Feb 2024 20:36:05 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Html/Css</title>
+      <link>http://localhost:1313/tags/html/css/</link>
+      <pubDate>Sun, 04 Feb 2024 20:36:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/html/css/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Myphpadmin</title>
+      <link>http://localhost:1313/tags/myphpadmin/</link>
+      <pubDate>Sun, 04 Feb 2024 20:36:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/myphpadmin/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>http://localhost:1313/tags/mysql/</link>
+      <pubDate>Sun, 04 Feb 2024 20:36:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/mysql/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Node.js</title>
+      <link>http://localhost:1313/tags/node.js/</link>
+      <pubDate>Sun, 04 Feb 2024 20:36:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/node.js/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>.NET</title>
+      <link>http://localhost:1313/tags/.net/</link>
+      <pubDate>Fri, 03 Nov 2023 15:29:32 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/.net/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Angular</title>
+      <link>http://localhost:1313/tags/angular/</link>
+      <pubDate>Fri, 03 Nov 2023 15:29:32 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/angular/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Not Available</title>
+      <link>http://localhost:1313/tags/not-available/</link>
+      <pubDate>Fri, 03 Nov 2023 15:29:32 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/not-available/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PostgreSQL</title>
+      <link>http://localhost:1313/tags/postgresql/</link>
+      <pubDate>Fri, 03 Nov 2023 15:29:32 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/postgresql/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sequelize</title>
+      <link>http://localhost:1313/tags/sequelize/</link>
+      <pubDate>Fri, 03 Nov 2023 15:29:32 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/sequelize/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TypeScript</title>
+      <link>http://localhost:1313/tags/typescript/</link>
+      <pubDate>Fri, 03 Nov 2023 15:29:32 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/typescript/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>http://localhost:1313/tags/css/</link>
+      <pubDate>Tue, 01 Aug 2023 23:09:30 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/css/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Jotform</title>
+      <link>http://localhost:1313/tags/jotform/</link>
+      <pubDate>Tue, 01 Aug 2023 23:09:30 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/jotform/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Aws</title>
+      <link>http://localhost:1313/tags/aws/</link>
+      <pubDate>Mon, 17 Jul 2023 12:14:12 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/aws/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nodejs</title>
+      <link>http://localhost:1313/tags/nodejs/</link>
+      <pubDate>Mon, 10 Apr 2023 13:01:30 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/nodejs/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

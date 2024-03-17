@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MySQL on Dasw</title>
+    <link>http://localhost:1313/tags/mysql/</link>
+    <description>Recent content in MySQL on Dasw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Dasw</copyright>
+    <lastBuildDate>Sun, 04 Feb 2024 20:36:05 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Liris Art Collection</title>
+      <link>http://localhost:1313/projects/liris/</link>
+      <pubDate>Sun, 04 Feb 2024 20:36:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/projects/liris/</guid>
+      <description>This is a simple website for Liris, a singer who sings very well and makes beautiful drawings. There are simple implementations such as using the YouTube API</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/liris/feature.png" />
+    </item>
+    
+  </channel>
+</rss>

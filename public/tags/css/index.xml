@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on Dasw</title>
+    <link>http://localhost:1313/tags/css/</link>
+    <description>Recent content in CSS on Dasw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Dasw</copyright>
+    <lastBuildDate>Tue, 01 Aug 2023 23:09:30 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stumble Creators Program Forms</title>
+      <link>http://localhost:1313/projects/stumble-creators-program-forms/</link>
+      <pubDate>Tue, 01 Aug 2023 23:09:30 +0800</pubDate>
+      
+      <guid>http://localhost:1313/projects/stumble-creators-program-forms/</guid>
+      <description>How forms for the creator program are possible</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/stumble-creators-program-forms/feature.png" />
+    </item>
+    
+  </channel>
+</rss>
