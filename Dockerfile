@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
 # remove default config file
-RUN rm -rf /etc/nginx/conf.d/*
+# RUN rm -rf /etc/nginx/conf.d/*
 
 COPY ./public /usr/share/nginx/html
 
