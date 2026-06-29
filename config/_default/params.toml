@@ -138,7 +138,7 @@ smartTOCHideUnfocusedChildren = true
 
 
 [verification]
-  # google = ""
+  google = "" # cole aqui o token do Google Search Console (metodo "HTML tag"); vazio = nada e renderizado
   # bing = ""
   # pinterest = ""
   # yandex = ""

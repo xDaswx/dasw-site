@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {{/* Title */}}
     {{ if .IsHome -}}
-    <title>{{ .Site.Title | emojify }}</title>
-    <meta name="title" content="{{ .Site.Title | emojify }}" />
+    <title>Dasw - Backend Developer | Security</title>
+    <meta name="title" content="Dasw - Backend Developer | Security" />
     {{- else -}}
     <title>{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}</title>
     <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
@@ -103,6 +103,30 @@
     {{ template "_internal/twitter_cards.html" . }}
     {{/* Schema */}}
     {{ partial "schema.html" . }}
+    {{/* Person / ProfilePage schema - helps Google associate the "Dasw" entity with this site */}}
+    {{ if .IsHome }}
+    {{- $sameAs := slice -}}
+    {{- range $link := .Site.Author.links -}}
+      {{- range $name, $url := $link -}}
+        {{- $sameAs = $sameAs | append $url -}}
+      {{- end -}}
+    {{- end -}}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": {{ .Site.Author.name | default .Site.Title | jsonify }},
+        "url": {{ .Site.BaseURL | jsonify }},
+        "image": {{ "img/avatar.jpg" | absURL | jsonify }},
+        "jobTitle": "Backend Developer",
+        "description": {{ .Description | default .Site.Params.description | default .Site.Title | jsonify }},
+        "sameAs": {{ $sameAs | jsonify }}
+      }
+    }
+    </script>
+    {{ end }}
     {{/* Me */}}
     {{ with .Site.Author.name }}
     <meta name="author" content="{{ . }}" />{{ end }}
